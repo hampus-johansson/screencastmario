@@ -4,7 +4,7 @@
   "description": "TypeScript version of the Mario5 demo application migrated to TypeScript 2.0.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "configure": "mkdir release; cp -r assets/. release/",
+    "configure": "mkdir release & xcopy /s assets release",
     "configurewin": "mkdir release & cp -r assets/. release/",
     "build": "tsc",
     "deploy": "npm run configure & npm run build",
@@ -37,9 +37,9 @@
     "systemjs": "^0.20.14",
     "traceur": "0.0.111",
     "ts-node": "^3.0.6",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^4.2.0"
   },
-  "dependencies": {
-    "webpack": "^3.0.0"
-  }
+  "dependencies": {}
 }
